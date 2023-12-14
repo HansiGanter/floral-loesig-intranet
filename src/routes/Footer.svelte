@@ -2,6 +2,8 @@
 	import Container from '$lib/components/Conatiner.svelte';
 	import logo from '$lib/images/logo.svg';
 	import H6 from '$lib/components/Headings/H6.svelte';
+
+	import { _ } from 'svelte-i18n';
 </script>
 
 <footer>
@@ -17,26 +19,26 @@
 						<p>3970 Weitra</p>
 					</div>
 					<div class="grid">
-						<H6>Contact:</H6>
+						<H6>{$_('footer.contact')}</H6>
 						<a href="tel:+43285620320">+43 (0) 2856 203 20</a>
 						<a href="mailto:office@floral.at">office@floral.at</a>
 					</div>
 				</div>
 				<div class="flex flex-col gap-3">
-					<H6>Go to</H6>
-					<a href="/">Home</a>
-					<a href="/News">News</a>
-					<a href="/Team">Team</a>
-					<a href="/AboutUs">About Us</a>
+					<H6>{$_('footer.goto')}</H6>
+					<a href="/">{$_('navbar.home')}</a>
+					<a href="/News">{$_('navbar.news')}</a>
+					<a href="/Team">{$_('navbar.team')}</a>
+					<a href="/AboutUs">{$_('navbar.aboutus')}</a>
 				</div>
 				<div class="flex flex-col gap-3">
-					<H6><a href="https://floral.at">floral.at</a></H6>
-					<a href="https://floral.at/stoffe">Stoffe</a>
-					<a href="https://floral.at/biostoffe">Biostoffe</a>
-					<a href="https://floral.at/naehstudio">Nähstudio</a>
-					<a href="https://floral.at/sonnenschutz">Sonnenschutz</a>
-					<a href="https://floral.at/ueber-uns">Unternehmen</a>
-					<a href="https://floral.at/kontakt">Kontakt</a>
+					<H6><a href="https://floral.at">{$_('floralat.website')}</a></H6>
+					<a href="https://floral.at/stoffe">{$_('floralat.stoffe')}</a>
+					<a href="https://floral.at/biostoffe">{$_('floralat.biostoffe')}</a>
+					<a href="https://floral.at/naehstudio">{$_('floralat.naehstudio')}</a>
+					<a href="https://floral.at/sonnenschutz">{$_('floralat.sonnenschutz')}</a>
+					<a href="https://floral.at/ueber-uns">{$_('floralat.ueberuns')}</a>
+					<a href="https://floral.at/kontakt">{$_('floralat.kontakt')}</a>
 				</div>
 			</div>
 			<div class="grid gap-8">
@@ -44,8 +46,10 @@
 				<div class="flex justify-between">
 					<p>© 2023 Floral LÖSIEG Gardinenerzeugungsges.m.b.H</p>
 					<div class="flex gap-6">
-						<a class="underline" href="https://floral.at/impressum">Impressum</a>
-						<a class="underline" href="https://floral.at/datenschutzbestimmungen">Privacy Policy</a>
+						<a class="underline" href="https://floral.at/impressum">{$_('footer.imprint')}</a>
+						<a class="underline" href="https://floral.at/datenschutzbestimmungen"
+							>{$_('footer.privacy-policy')}
+						</a>
 					</div>
 				</div>
 			</div>

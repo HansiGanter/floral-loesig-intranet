@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutus": "About Us",
+    "news": "News",
+    "team": "Team"
+  },
+  "floralat": {
+    "website": "floral.at",
+    "stoffe": "Stoffe",
+    "biostoffe": "Biostoffe",
+    "naehstudio": "Nähstudio",
+    "sonnenschutz": "Sonnenschutz",
+    "ueberuns": "Unternehmen",
+    "kontakt": "Kontakt"
+  },
+  "footer": {
+    "goto": "Go to",
+    "contact": "Contact:",
+    "imprint": "Imprint",
+    "privacy-policy": "Privacy Policy"
+  }
+}

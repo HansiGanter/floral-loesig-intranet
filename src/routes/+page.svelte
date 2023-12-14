@@ -6,6 +6,8 @@
 	import H4 from '$lib/components/Headings/H4.svelte';
 	import H5 from '$lib/components/Headings/H5.svelte';
 	import H6 from '$lib/components/Headings/H6.svelte';
+
+	import { _ } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -20,4 +22,5 @@
 	<H4>Heading 1</H4>
 	<H5>Heading 1</H5>
 	<H6>Heading 1</H6>
+	{$_('navbar.home')}<br />
 </Container>
