@@ -1,18 +1,19 @@
 <script>
-	import { page } from '$app/stores';
 	import logo from '$lib/images/logo.svg';
-	import github from '$lib/images/github.svg';
 	import Container from '$lib/components/Conatiner.svelte';
 </script>
 
 <header>
 	<Container>
-		<img src={logo} alt="Floral Logo" />
-
-		<nav>
-			<svg viewBox="0 0 2 3" aria-hidden="true">
-				<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-			</svg>
+		<nav class="flex items-center justify-between w-full h-16 py-4">
+			<img src={logo} alt="Floral Logo" class="object-contain h-full w-fit" />
+			<div class="flex gap-8">
+				<a href="/">Home</a>
+				<a href="/News">News</a>
+				<a href="/Team">Team</a>
+				<a href="/AboutUs">About Us</a>
+			</div>
+			<button>floral.at</button>
 		</nav>
 	</Container>
 </header>
