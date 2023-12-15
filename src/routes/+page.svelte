@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
 	import Container from '$lib/components/Conatiner.svelte';
-	import H1 from '$lib/components/Headings/H1.svelte';
-	import H2 from '$lib/components/Headings/H2.svelte';
-	import H3 from '$lib/components/Headings/H3.svelte';
-	import H4 from '$lib/components/Headings/H4.svelte';
-	import H5 from '$lib/components/Headings/H5.svelte';
-	import H6 from '$lib/components/Headings/H6.svelte';
+	import Button from '$lib/components/common/Button.svelte';
+	import H1 from '$lib/components/common/headings/H1.svelte';
+	import H2 from '$lib/components/common/headings/H2.svelte';
+	import H3 from '$lib/components/common/headings/H3.svelte';
+	import H4 from '$lib/components/common/headings/H4.svelte';
+	import H5 from '$lib/components/common/headings/H5.svelte';
+	import H6 from '$lib/components/common/headings/H6.svelte';
 
 	import { _ } from 'svelte-i18n';
 </script>
@@ -22,5 +23,29 @@
 	<H4>Heading 1</H4>
 	<H5>Heading 1</H5>
 	<H6>Heading 1</H6>
-	{$_('navbar.home')}<br />
+	<br /><br />
+	<div class="flex gap-4 py-4">
+		<Button variant="primary">Button</Button>
+		<Button variant="secondary">Button</Button>
+		<Button variant="tertiary">Button</Button>
+		<Button variant="link">Button</Button>
+	</div>
+	<div class="flex gap-4 py-4">
+		<Button variant="primary">Button</Button>
+		<Button variant="secondary">Button</Button>
+		<Button variant="tertiary">Button</Button>
+		<Button variant="link">Button</Button>
+	</div>
+	<div class="flex gap-4 py-4">
+		<Button variant="primary">Button</Button>
+		<Button variant="secondary">Button</Button>
+		<Button variant="tertiary">Button</Button>
+		<Button variant="link">Button</Button>
+	</div>
+	<div class="flex gap-4 py-4">
+		<Button variant="primary">Button</Button>
+		<Button variant="secondary">Button</Button>
+		<Button variant="tertiary">Button</Button>
+		<Button variant="link">Button</Button>
+	</div>
 </Container>

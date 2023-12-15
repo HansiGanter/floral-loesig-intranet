@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import logo from '$lib/images/logo.svg';
 	import Container from '$lib/components/Conatiner.svelte';
 
