@@ -13,8 +13,7 @@
 			'text-white bg-black border border-black focus:ring-blue-300 hover:bg-white hover:text-black',
 		secondary:
 			'text-black bg-white border border-black focus:ring-blue-300 hover:bg-black hover:text-white',
-		tertiary:
-			'text-black bg-white border border-white focus:ring-blue-300 hover:bg-black hover:text-white hover:border-black',
+		tertiary: 'text-black bg-white border border-white focus:ring-blue-300 hover:border-black',
 		link: 'text-black bg-white focus:ring-blue-300 hover:underline'
 	};
 </script>
