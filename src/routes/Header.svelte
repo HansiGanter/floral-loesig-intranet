@@ -8,7 +8,9 @@
 <header>
 	<Container>
 		<nav class="flex h-16 w-full items-center justify-between py-4">
-			<img src={logo} alt="Floral Logo" class="h-full w-fit object-contain" />
+			<a href="/" class="h-full">
+				<img src={logo} alt="Floral Logo" class="h-full w-fit object-contain" />
+			</a>
 			<div class="flex gap-8">
 				<a href="/">{$_('navbar.home')}</a>
 				<a href="/News">{$_('navbar.news')}</a>
