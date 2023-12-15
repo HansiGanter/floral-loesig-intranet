@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/images/logo.svg';
+	import logo from '$lib/assets/logo.svg';
 	import Container from '$lib/components/Conatiner.svelte';
 
 	import { _ } from 'svelte-i18n';

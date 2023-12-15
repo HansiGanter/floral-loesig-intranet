@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Container from '$lib/components/Conatiner.svelte';
-	import logo from '$lib/images/logo.svg';
+	import logo from '$lib/assets/logo.svg';
 	import H6 from '$lib/components/common/headings/H6.svelte';
 
 	import { _ } from 'svelte-i18n';

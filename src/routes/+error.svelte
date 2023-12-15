@@ -4,7 +4,7 @@
 	import H4 from '$lib/components/common/headings/H4.svelte';
 </script>
 
-<div class="my-40 w-full">
+<div class="my-20 w-full">
 	<H1 class="text-center">An error happend!</H1>
 	<H4 class="text-center">Error status: {$page.status}</H4>
 	<H4 class="text-center">
