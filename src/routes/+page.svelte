@@ -7,7 +7,7 @@
 	import H4 from '$lib/components/common/headings/H4.svelte';
 	import H5 from '$lib/components/common/headings/H5.svelte';
 	import H6 from '$lib/components/common/headings/H6.svelte';
-
+	import Icon from '@iconify/svelte';
 	import { _ } from 'svelte-i18n';
 </script>
 
@@ -31,21 +31,21 @@
 		<Button variant="link">Button</Button>
 	</div>
 	<div class="flex gap-4 py-4">
-		<Button variant="primary">Button</Button>
-		<Button variant="secondary">Button</Button>
-		<Button variant="tertiary">Button</Button>
-		<Button variant="link">Button</Button>
+		<Button variant="primary" leadingIcon="mdi-light:home">Button</Button>
+		<Button variant="secondary" leadingIcon="mdi-light:home">Button</Button>
+		<Button variant="tertiary" leadingIcon="mdi-light:home">Button</Button>
+		<Button variant="link" leadingIcon="mdi-light:home">Button</Button>
 	</div>
 	<div class="flex gap-4 py-4">
-		<Button variant="primary">Button</Button>
-		<Button variant="secondary">Button</Button>
-		<Button variant="tertiary">Button</Button>
-		<Button variant="link">Button</Button>
+		<Button variant="primary" trailingIcon="mdi-light:home">Button</Button>
+		<Button variant="secondary" trailingIcon="mdi-light:home">Button</Button>
+		<Button variant="tertiary" trailingIcon="mdi-light:home">Button</Button>
+		<Button variant="link" trailingIcon="mdi-light:home">Button</Button>
 	</div>
 	<div class="flex gap-4 py-4">
-		<Button variant="primary">Button</Button>
-		<Button variant="secondary">Button</Button>
-		<Button variant="tertiary">Button</Button>
-		<Button variant="link">Button</Button>
+		<Button variant="primary" leadingIcon="mdi-light:home"></Button>
+		<Button variant="secondary" leadingIcon="mdi-light:home"></Button>
+		<Button variant="tertiary" leadingIcon="mdi-light:home"></Button>
+		<Button variant="link" leadingIcon="mdi-light:home"></Button>
 	</div>
 </Container>

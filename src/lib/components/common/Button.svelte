@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
+
 	export let variant: 'primary' | 'secondary' | 'tertiary' | 'link';
 	export let leadingIcon = '';
 	export let trailingIcon = '';
@@ -23,10 +25,10 @@
 	on:click
 >
 	{#if leadingIcon}
-		<span class={`h-6 w-6 shrink-0 ${leadingIcon}`} />
+		<Icon icon={leadingIcon} class="h-6 w-6 shrink-0" />
 	{/if}
 	<slot />
 	{#if trailingIcon}
-		<span class={`h-6 w-6 shrink-0 ${trailingIcon}`} />
+		<Icon icon={trailingIcon} class="h-6 w-6 shrink-0" />
 	{/if}
 </button>
