@@ -19,5 +19,15 @@
     "contact": "Contact:",
     "imprint": "Imprint",
     "privacy-policy": "Privacy Policy"
+  },
+  "title": "Floral Lösieg Intranet",
+  "hero": {
+    "heading": "Welcome Home: Explore Floral Lösieg's Intranet Realm",
+    "subheading": "Your central hub for seamless collaboration, updates, and company resources.",
+    "gotovision": "Vision"
+  },
+  "testimonial": {
+    "heading": "Customer Testimonials",
+    "description": "Hear from our satisfied customers and their experiences."
   }
 }

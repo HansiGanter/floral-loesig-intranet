@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Container from '$lib/components/Conatiner.svelte';
+	import Container from '$lib/components/Container.svelte';
 	import logo from '$lib/assets/logo.svg';
 	import H6 from '$lib/components/common/headings/H6.svelte';
 

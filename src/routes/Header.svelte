@@ -1,12 +1,12 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.svg';
-	import Container from '$lib/components/Conatiner.svelte';
+	import Container from '$lib/components/Container.svelte';
 
 	import { _ } from 'svelte-i18n';
 </script>
 
 <header>
-	<Container>
+	<Container class="my-0">
 		<nav class="flex h-16 w-full items-center justify-between py-4">
 			<a href="/" class="h-full">
 				<img src={logo} alt="Floral Logo" class="h-full w-fit object-contain" />

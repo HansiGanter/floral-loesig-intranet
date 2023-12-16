@@ -19,5 +19,15 @@
     "contact": "Kontakt:",
     "imprint": "Impressum",
     "privacy-policy": "Datenschutzbestimmungen"
+  },
+  "title": "Floral Lösieg Intranet",
+  "hero": {
+    "heading": "Willkommen zu Hause: Entdecken Sie das Intranet von Floral Lösieg",
+    "subheading": "Ihre zentrale Anlaufstelle für nahtlose Zusammenarbeit, Updates und Unternehmensressourcen.",
+    "gotovision": "Leitbild"
+  },
+  "testimonial": {
+    "heading": "Das sagen unsere Kunden",
+    "description": "Erhalten Sie Einblicke von unseren zufriedenen Kunden und ihren Erfahrungen."
   }
 }
