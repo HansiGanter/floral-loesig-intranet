@@ -3,6 +3,6 @@
 	export { clazz as class };
 </script>
 
-<h1 class={`my-1 text-xl font-semibold ${clazz}`}>
+<h6 class={`my-1 text-xl font-semibold ${clazz}`}>
 	<slot />
-</h1>
+</h6>

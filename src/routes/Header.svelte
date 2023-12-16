@@ -6,10 +6,10 @@
 </script>
 
 <header>
-	<Container class="my-0">
+	<Container class="!my-0">
 		<nav class="flex h-16 w-full items-center justify-between py-4">
 			<a href="/" class="h-full">
-				<img src={logo} alt="Floral Logo" class="h-full w-fit object-contain" />
+				<img src={logo} alt="Floral Logo" class="h-full object-contain" />
 			</a>
 			<div class="flex gap-8">
 				<a href="/">{$_('navbar.home')}</a>
