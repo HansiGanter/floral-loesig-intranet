@@ -29,5 +29,17 @@
   "testimonial": {
     "heading": "Das sagen unsere Kunden",
     "description": "Erhalten Sie Einblicke von unseren zufriedenen Kunden und ihren Erfahrungen."
+  },
+  "news": {
+    "heading": "Immer auf dem Neuesten Stand",
+    "subheading": "Die neusten Ereignisse und Ankündigungen von Floral Lösieg.",
+    "newslist": {
+      "preheading": "News",
+      "heading": "Bleiben Sie Informiert",
+      "description": "Holen Sie sich hier die neuesten Unternehmensupdates und Ankündigungen.",
+      "item": {
+        "button": "zum Artikel"
+      }
+    }
   }
 }

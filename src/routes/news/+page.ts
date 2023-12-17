@@ -1,12 +1,12 @@
-import { GET } from '$lib/content/newsposts';
+import { GETNewsPosts } from '$lib/content/newsposts';
 
 export function load() {
-	return GET()
+	return GETNewsPosts()
 		.then((res) => {
 			return res.json();
 		})
-		.then((x) => {
-			return { x };
+		.then((newsposts) => {
+			return { newsposts };
 		})
 		.catch((error) => {
 			console.error('Error loading data:', error);

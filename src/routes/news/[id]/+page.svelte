@@ -10,5 +10,3 @@
 	<h1>{post.title}</h1>
 	<p>{post.body}</p>
 </div>
-
-<!-- <Seo title="{post.title} | Business Frontpage" description={post.body} type="BlogPosting" /> -->

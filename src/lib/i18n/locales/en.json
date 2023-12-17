@@ -29,5 +29,17 @@
   "testimonial": {
     "heading": "Customer Testimonials",
     "description": "Hear from our satisfied customers and their experiences."
+  },
+  "news": {
+    "heading": "Stay Informed",
+    "subheading": "Discover the latest updates and news from Floral Lösieg.",
+    "newslist": {
+      "preheading": "News",
+      "heading": "Stay updated with us",
+      "description": "Get the latest company updates and announcements here.",
+      "item": {
+        "button": "Go to article"
+      }
+    }
   }
 }

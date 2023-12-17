@@ -87,7 +87,7 @@
 	<H2 class="text-center">{$_('testimonial.heading')}</H2>
 	<p class="mb-20 text-center">{$_('testimonial.description')}</p>
 	<div class="relative">
-		<Carousel bind:left bind:right>
+		<Carousel bind:left bind:right perPage={3}>
 			{#each testimonials as testimonial}
 				<div class="mx-4 flex flex-col gap-8 border border-black p-8">
 					<div class="flex">
@@ -116,10 +116,10 @@
 			{/each}
 		</Carousel>
 		<Button variant="secondary" class="goLeft absolute rounded-full !p-2" on:click={goLeft}>
-			<Icon icon="ic:baseline-arrow-back" class="h-6 w-6 shrink-0" />
+			<Icon icon="ic:round-arrow-back" class="h-6 w-6 shrink-0" />
 		</Button>
 		<Button variant="secondary" class="goRight absolute rounded-full !p-2" on:click={goRight}>
-			<Icon icon="ic:baseline-arrow-forward" class="h-6 w-6 shrink-0" />
+			<Icon icon="ic:round-arrow-forward" class="h-6 w-6 shrink-0" />
 		</Button>
 	</div>
 </Container>

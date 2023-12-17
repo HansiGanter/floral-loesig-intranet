@@ -13,9 +13,9 @@
 			</a>
 			<div class="flex gap-8">
 				<a href="/">{$_('navbar.home')}</a>
-				<a href="/News">{$_('navbar.news')}</a>
-				<a href="/Team">{$_('navbar.team')}</a>
-				<a href="/AboutUs">{$_('navbar.aboutus')}</a>
+				<a href="/news">{$_('navbar.news')}</a>
+				<a href="/team">{$_('navbar.team')}</a>
+				<a href="/aboutUs">{$_('navbar.aboutus')}</a>
 			</div>
 			<button>{$_('floralat.website')}</button>
 		</nav>

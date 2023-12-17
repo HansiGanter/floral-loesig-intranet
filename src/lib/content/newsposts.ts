@@ -1,6 +1,8 @@
 import { json } from '@sveltejs/kit';
+import MyImagePortrait from '$lib/assets/images/image-portrait.jpg?enhanced';
+import MyImage1 from '$lib/assets/images/image1.jpg?enhanced';
 
-export const GET = async () => {
+export const GETNewsPosts = async () => {
 	const newspost = [
 		{
 			id: 1,
@@ -90,3 +92,11 @@ export const GET = async () => {
 
 	return json(newspost);
 };
+
+export const NewsGallery = [
+	{ url: MyImagePortrait, alt: 'Some description' },
+	{ url: MyImage1, alt: 'Some description' },
+	{ url: MyImagePortrait, alt: 'Some description' },
+	{ url: MyImage1, alt: 'Some description' },
+	{ url: MyImagePortrait, alt: 'Some description' }
+];
