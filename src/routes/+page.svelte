@@ -85,7 +85,7 @@
 
 <Container>
 	<H2 class="text-center">{$_('testimonial.heading')}</H2>
-	<H6 class="mb-20 text-center">{$_('testimonial.description')}</H6>
+	<p class="mb-20 text-center">{$_('testimonial.description')}</p>
 	<div class="relative">
 		<Carousel bind:left bind:right>
 			{#each testimonials as testimonial}
@@ -122,6 +122,12 @@
 			<Icon icon="ic:baseline-arrow-forward" class="h-6 w-6 shrink-0" />
 		</Button>
 	</div>
+</Container>
+
+<Container>
+	<p class="font-semibold">Latest</p>
+	<H2>Stay Updated with Our News</H2>
+	<p>Get the latest news and updates from our company.</p>
 </Container>
 
 <style>
