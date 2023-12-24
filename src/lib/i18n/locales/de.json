@@ -40,6 +40,17 @@
       "item": {
         "button": "zum Artikel"
       }
+    },
+    "newsPost": {
+      "gotoallnews": "zu den News",
+      "minutesread": "Minuten Lesezeit",
+      "writtenby": "Author:",
+      "published": "Veröffentlicht am:"
     }
+  },
+  "error": {
+    "heading": "Ein Fehler ist aufgetreten",
+    "status": "Fehlerstatus:",
+    "description": "Fehlerbeschreibung:"
   }
 }

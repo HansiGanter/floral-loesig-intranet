@@ -9,6 +9,7 @@
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Icon from '@iconify/svelte';
 	import MyImage from '$lib/assets/images/image-portrait.jpg?enhanced';
+	import LatestNews from '$lib/components/LatestNews.svelte';
 
 	const testimonials = [
 		{
@@ -125,9 +126,7 @@
 </Container>
 
 <Container>
-	<p class="font-semibold">Latest</p>
-	<H2>Stay Updated with Our News</H2>
-	<p>Get the latest news and updates from our company.</p>
+	<LatestNews></LatestNews>
 </Container>
 
 <style>

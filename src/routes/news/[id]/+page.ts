@@ -1,8 +1,10 @@
-export const load = async ({ fetch, params: { id } }) => {
-	const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-	const post = await res.json();
+import { GETNewsPostById } from '$lib/content/newsposts';
 
-	return {
-		post
-	};
-};
+export function load({ params: { id } }) {
+	return GETNewsPostById(+id)
+		.then((res) => res.json())
+		.catch((error) => {
+			console.error('Error loading data:', error);
+			return { status: 500, error: new Error('Failed to load data') };
+		});
+}

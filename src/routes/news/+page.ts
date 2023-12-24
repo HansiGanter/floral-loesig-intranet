@@ -2,9 +2,7 @@ import { GETNewsPosts } from '$lib/content/newsposts';
 
 export function load() {
 	return GETNewsPosts()
-		.then((res) => {
-			return res.json();
-		})
+		.then((res) => res.json())
 		.then((newsposts) => {
 			return { newsposts };
 		})

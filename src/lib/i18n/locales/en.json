@@ -40,6 +40,17 @@
       "item": {
         "button": "Go to article"
       }
+    },
+    "newsPost": {
+      "gotoallnews": "all news posts",
+      "minutesread": "minutes read",
+      "writtenby": "Written by:",
+      "published": "Published on:"
     }
+  },
+  "error": {
+    "heading": "An error happend!",
+    "status": "Error status:",
+    "description": "Error description:"
   }
 }
