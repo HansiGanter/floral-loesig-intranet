@@ -66,18 +66,30 @@
 </Container>
 
 <Container>
-	<div class="relative">
-		<Carousel bind:left bind:right perPage={1}>
-			{#each NewsGallery as img}
-				<enhanced:img src={img.url} alt={`Portrait von ${img.alt}`} class="w-screen object-cover" />
-			{/each}
-		</Carousel>
-		<Button variant="secondary" class="goLeft absolute rounded-full !p-2" on:click={goLeft}>
-			<Icon icon="ic:round-arrow-back" class="h-6 w-6 shrink-0" />
-		</Button>
-		<Button variant="secondary" class="goRight absolute rounded-full !p-2" on:click={goRight}>
-			<Icon icon="ic:round-arrow-forward" class="h-6 w-6 shrink-0" />
-		</Button>
+	<div class="flex flex-col gap-20">
+		<div class="flex flex-col gap-6">
+			<H2 class="!my-0 text-center">
+				{$_('news.gallery.heading')}
+			</H2>
+			<p class="text-center">{$_('news.gallery.descriptions')}</p>
+		</div>
+		<div class="relative">
+			<Carousel bind:left bind:right perPage={1}>
+				{#each NewsGallery as img}
+					<enhanced:img
+						src={img.url}
+						alt={`Portrait von ${img.alt}`}
+						class="w-screen object-cover"
+					/>
+				{/each}
+			</Carousel>
+			<Button variant="secondary" class="goLeft absolute rounded-full !p-2" on:click={goLeft}>
+				<Icon icon="ic:round-arrow-back" class="h-6 w-6 shrink-0" />
+			</Button>
+			<Button variant="secondary" class="goRight absolute rounded-full !p-2" on:click={goRight}>
+				<Icon icon="ic:round-arrow-forward" class="h-6 w-6 shrink-0" />
+			</Button>
+		</div>
 	</div>
 </Container>
 

@@ -52,5 +52,8 @@
     "heading": "An error happend!",
     "status": "Error status:",
     "description": "Error description:"
+  },
+  "team": {
+    "heading": ""
   }
 }

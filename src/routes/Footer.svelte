@@ -7,8 +7,8 @@
 </script>
 
 <footer>
-	<Container>
-		<div class="grid gap-20 py-20">
+	<Container class="mt-0">
+		<div class="grid gap-20 pb-20">
 			<div class="grid grid-cols-5">
 				<div class=" col-span-3 grid gap-8">
 					<img src={logo} alt="Floral Logo" class="h-12 object-contain" />

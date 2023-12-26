@@ -1,10 +1,7 @@
-import { GETTeamLeads } from '$lib/content/teamdata';
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = true;
+import { GETTeamData } from '$lib/content/teamdata';
 
 export function load() {
-	return GETTeamLeads()
+	return GETTeamData()
 		.then((res) => res.json())
 		.then((teamdata) => {
 			return { teamdata };

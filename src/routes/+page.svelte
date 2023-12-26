@@ -10,6 +10,10 @@
 	import Icon from '@iconify/svelte';
 	import MyImage from '$lib/assets/images/image-portrait.jpg?enhanced';
 	import LatestNews from '$lib/components/LatestNews.svelte';
+	import H4 from '$lib/components/common/headings/H4.svelte';
+	import Accordion from '$lib/components/Accordion.svelte';
+
+	export let data;
 
 	const testimonials = [
 		{
@@ -63,6 +67,33 @@
 	function goRight() {
 		right();
 	}
+
+	const faqs = [
+		{
+			question: $_('faq.question1'),
+			answer: $_('faq.answer1')
+		},
+		{
+			question: $_('faq.question2'),
+			answer: $_('faq.answer2')
+		},
+		{
+			question: $_('faq.question3'),
+			answer: $_('faq.answer3')
+		},
+		{
+			question: $_('faq.question4'),
+			answer: $_('faq.answer4')
+		},
+		{
+			question: $_('faq.question5'),
+			answer: $_('faq.answer5')
+		},
+		{
+			question: $_('faq.question6'),
+			answer: $_('faq.answer6')
+		}
+	];
 </script>
 
 <svelte:head>
@@ -127,6 +158,64 @@
 
 <Container>
 	<LatestNews></LatestNews>
+</Container>
+
+<Container>
+	<div class="flex flex-col gap-20">
+		<div class="flex flex-col gap-4">
+			<div class="flex flex-col gap-6">
+				<H2 class="!my-0">{$_('team.teamlist.heading')}</H2>
+				<p class="text-lg">{$_('team.teamlist.description')}</p>
+				<a href="/team">
+					<Button class="w-fit" variant="primary">{$_('team.gotoall')}</Button>
+				</a>
+			</div>
+		</div>
+		<div class="grid grid-cols-2 gap-16">
+			{#each data.teamdata as teammember}
+				<div class="flex flex-col gap-6">
+					<enhanced:img
+						src={MyImage}
+						alt={`Image of employee ${teammember.name}`}
+						class="aspect-video object-cover"
+					/>
+					<div class="flex flex-col gap-4">
+						<div>
+							<p class="text-xl font-semibold">{teammember.name}</p>
+							<p class="text-lg">{teammember.job}</p>
+						</div>
+						<p>{teammember.description}</p>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+</Container>
+
+<Container>
+	<div class="flex flex-col gap-20">
+		<div class="flex flex-col gap-6">
+			<H2>{$_('faq.heading')}</H2>
+			<p class="text-lg">{$_('faq.description')}</p>
+		</div>
+		<div class="border-b border-black">
+			{#each faqs as faq}
+				<Accordion>
+					<span slot="head">{faq.question}</span>
+					<div slot="details">
+						<p>{faq.answer}</p>
+					</div>
+				</Accordion>
+			{/each}
+		</div>
+		<div class="flex flex-col gap-6">
+			<div class="flex flex-col gap-6">
+				<H4>{$_('faq.contactus.heading')}</H4>
+				<p class="text-lg">{$_('faq.contactus.description')}</p>
+			</div>
+			<Button class="w-fit" variant="secondary">{$_('faq.contactus.button')}</Button>
+		</div>
+	</div>
 </Container>
 
 <style>
