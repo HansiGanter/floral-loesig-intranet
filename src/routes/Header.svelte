@@ -15,7 +15,7 @@
 				<a href="/">{$_('navbar.home')}</a>
 				<a href="/news">{$_('navbar.news')}</a>
 				<a href="/team">{$_('navbar.team')}</a>
-				<a href="/aboutUs">{$_('navbar.aboutus')}</a>
+				<a href="/aboutus">{$_('navbar.aboutus')}</a>
 			</div>
 			<button>{$_('floralat.website')}</button>
 		</nav>
