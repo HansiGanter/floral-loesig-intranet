@@ -11,7 +11,6 @@
 	import Icon from '@iconify/svelte';
 
 	export let data;
-	console.log(data);
 
 	let left: () => void;
 	let right: () => void;
